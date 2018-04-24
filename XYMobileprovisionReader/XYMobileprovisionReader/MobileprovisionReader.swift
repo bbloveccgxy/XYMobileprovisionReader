@@ -18,7 +18,7 @@ public class MobileprovisionReader {
         self.args = ["cms", "-D", "-i", self.path]
     }
     
-    public func getInfo() -> MobileprovisionInfo? {
+    public func getInfo() -> MobileprovisionInfo {
         
         let process = Process()
         let outpipe = Pipe()
