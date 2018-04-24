@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		28582350208EE16000653171 /* XYMobileprovisionReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2858234E208EE16000653171 /* XYMobileprovisionReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		285823FB208F091300653171 /* MobileprovisionReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285823FA208F091300653171 /* MobileprovisionReader.swift */; };
+		285823FD208F09AF00653171 /* MobileprovisionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285823FC208F09AF00653171 /* MobileprovisionInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2858234B208EE16000653171 /* XYMobileprovisionReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XYMobileprovisionReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2858234E208EE16000653171 /* XYMobileprovisionReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYMobileprovisionReader.h; sourceTree = "<group>"; };
 		2858234F208EE16000653171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285823FA208F091300653171 /* MobileprovisionReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileprovisionReader.swift; sourceTree = "<group>"; };
+		285823FC208F09AF00653171 /* MobileprovisionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileprovisionInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 				2858234C208EE16000653171 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		2858234C208EE16000653171 /* Products */ = {
 			isa = PBXGroup;
@@ -48,6 +53,8 @@
 			children = (
 				2858234E208EE16000653171 /* XYMobileprovisionReader.h */,
 				2858234F208EE16000653171 /* Info.plist */,
+				285823FA208F091300653171 /* MobileprovisionReader.swift */,
+				285823FC208F09AF00653171 /* MobileprovisionInfo.swift */,
 			);
 			path = XYMobileprovisionReader;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 				TargetAttributes = {
 					2858234A208EE16000653171 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285823FB208F091300653171 /* MobileprovisionReader.swift in Sources */,
+				285823FD208F09AF00653171 /* MobileprovisionInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +268,7 @@
 		28582354208EE16000653171 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -274,9 +285,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoxinyuan.XYMobileprovisionReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -284,6 +297,7 @@
 		28582355208EE16000653171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -300,6 +314,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoxinyuan.XYMobileprovisionReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
